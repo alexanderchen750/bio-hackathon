@@ -1,0 +1,49 @@
+/* App.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+  }
+  .processedText{
+    text-align: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+  
+  .inputFile {
+    cursor: pointer;
+  }
+  
+  .previewImage {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .processedImage {
+    max-width: 100%;  /* Ensures the image is never wider than its container */
+    height: auto;     /* Maintains the aspect ratio of the image */
+    display: block;   /* Prevents the default inline behavior of img */
+    margin: 0 auto;   /* Centers the image horizontally */
+    margin-bottom: 0px;
+}
+
+
+.titleBox{
+  align-items: center;
+  width: 100%;
+}
+  
