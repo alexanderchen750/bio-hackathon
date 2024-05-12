@@ -47,6 +47,7 @@ function ImageUploadComponent() {
         <div>
             <div className="container">
                 <h3 className='processedText'>Upload Image:</h3>
+                <p>Supported Image Formats: jpeg, png, gif, bmp</p>
                 <form onSubmit={handleSubmit} className="form">
                     <input type="file" accept="image/jpeg, image/png, image/gif, image/bmp" onChange={handleFileChange} className="inputFile" />
 
@@ -55,7 +56,7 @@ function ImageUploadComponent() {
                 </form>
                 {uploadedImageUrl && (
                     <div>
-                        <h3 className='processedText'>Processed Image:</h3>
+                        <h3 className='processedText'>Model Reuslts:</h3>
                         <img src={uploadedImageUrl} alt="Processed" className="processedImage" />
                     </div>
                 )}
